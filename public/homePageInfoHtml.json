@@ -1,0 +1,9 @@
+{
+  "code": 1,
+  "msg": "success",
+  "data": {
+    "swiperImg":"<div style='width: 100%;'><img width='100%' src='https://img.yzcdn.cn/public_files/2017/10/24/e5a5a02309a41f9f5def56684808d9ae.jpeg'></div>",
+    "hotNews":"<div class='hotNews' v-if='billItem.hotNews&&billItem.hotNews.length > 0'><h3 v-for='(item,index) in billItem.hotNews' :key=index  class='newsTitle'>{{item}}</h3></div>",
+    "hotNewsList": "<div><div><h4>洪灾</h4><span>南方水灾</span></div><div><h4>疫情</h4><span>全球疫情</span></div></div>"
+  } 
+}

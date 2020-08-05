@@ -1,0 +1,29 @@
+{
+  "code": 1,
+  "msg": "success",
+  "data": {
+    "swiperImg": [
+      { "imgTitle": "img1","urlPath": "https://img.yzcdn.cn/public_files/2017/10/24/e5a5a02309a41f9f5def56684808d9ae.jpeg", "urlLink": "alibaba"},
+      { "imgTitle": "img2","urlPath": "https://hellorfimg.zcool.cn/provider_image/large/2237510007.jpg", "urlLink": "huawei"}
+    ],
+    "hotNews": ["东华","东华云计算", "文旅项目"],
+    "hotNewsList": [{
+      "titleName": "洪灾",
+      "content": "南方水灾"
+    },
+    {
+      "titleName": "疫情",
+      "content": "全球疫情"
+    } 
+    ],
+    "importThing": [{
+      "titleName": "南方洪灾",
+      "content": "南方水灾"
+    },
+    {
+      "titleName": "全球疫情",
+      "content": "全球疫情"
+    } 
+    ]
+  }
+}
