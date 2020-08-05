@@ -108,9 +108,10 @@ export default {
   .hotNews {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    // background-color: @background_color;
+    // justify-content: space-around;
+    // align-content: center;
+    background-color: $background_color;
+    @include center();
     // .center();   // effect
   }
   .hotNewsList, .importThingList {
