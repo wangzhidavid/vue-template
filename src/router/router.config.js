@@ -19,5 +19,14 @@ export const constantRouterMap = [
       title: 'about', // 页面标题
       keepAlive: false // keep-alive 标识
     }
+  },
+  {
+    path: '/error',
+    name: 'Error',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Error.vue'),
+    meta: {
+      title: 'error', // 页面标题
+      keepAlive: false // keep-alive 标识
+    }
   }
 ]

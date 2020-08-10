@@ -106,13 +106,15 @@ export default {
     height: 225px;
   }
   .hotNews {
-    display: flex;
-    flex-direction: row;
+    .flexbox(space-around, center, row, nowrap);
+    // display: flex;
+    // flex-direction: row;
     // justify-content: space-around;
     // align-content: center;
-    background-color: $background_color;
-    @include center();
-    // .center();   // effect
+    background-color: @background_color;
+    .newsTitle {
+      padding: 10px 0;
+    }
   }
   .hotNewsList, .importThingList {
     display: flex;

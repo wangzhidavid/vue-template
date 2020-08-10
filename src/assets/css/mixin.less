@@ -1,6 +1,6 @@
 // mixin
 // 清除浮动
-@mixin clearfix {
+.clearfix {
   &:after {
     content: "";
     display: table;
@@ -9,7 +9,7 @@
 }
  
 // 多行隐藏
-@mixin textoverflow($clamp:1) {
+.textoverflow($clamp:1) {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -21,18 +21,18 @@
 }
 
 //flex box
-@mixin flexbox($jc:space-between, $ai:center, $fd:row, $fw:nowrap) {
+.flexbox(@jc:space-between, @ai:center, @fd:row, @fw:nowrap) {
   display: flex;
   display: -webkit-flex;
   flex: 1;
-  justify-content: $jc;
-  -webkit-justify-content: $jc;
-  align-items: $ai;
-  -webkit-align-items: $ai;
-  flex-direction: $fd;
-  -webkit-flex-direction: $fd;
-  flex-wrap: $fw;
-  -webkit-flex-wrap: $fw;
+  justify-content: @jc;
+  -webkit-justify-content: @jc;
+  align-items: @ai;
+  -webkit-align-items: @ai;
+  flex-direction: @fd;
+  -webkit-flex-direction: @fd;
+  flex-wrap: @fw;
+  -webkit-flex-wrap: @fw;
 }
 // // 背景图片
 // @mixin bgImage($path) {
@@ -43,19 +43,19 @@
 // }
 
 // 居中布局
-@mixin center() {
+.center() {
   justify-content: center;
   align-content: center;
 }
 
 // 不换行
-@mixin no-wrap() {
+.no-wrap() {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-@mixin top-line($c: #c7c7c7) {
+.top-line($c: #c7c7c7) {
   content: ' ';
   position: absolute;
   left: 0;

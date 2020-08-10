@@ -57,6 +57,10 @@ http.interceptors.request.use(
   },
   function (error) {
     // Do something with request error
+    Toast.fail({
+      message: error.message,
+      duration: 3000
+    });
     return Promise.reject(error)
   }
 )
@@ -84,7 +88,8 @@ http.interceptors.response.use(
     Toast.fail({
       message: error.message,
       duration: 3000
-    })
+    });
+    // this.$router
     return Promise.reject(error)
   }
 )
